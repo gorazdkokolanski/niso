@@ -1,0 +1,728 @@
+@font-face {
+    font-family: 'Acumin Variable';
+    src: url('fonts/Acumin-Variable-Concept.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Schnyder Condensed';
+    src: url('fonts/IvyprestoDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #101010;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+header, footer, section {
+    width: 100%;
+}
+
+.niso-abs-bg{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+header{
+    position: absolute;
+    top: 0;
+}
+
+header>.container{
+    height: 90px;
+}
+
+.home-header-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header a{
+    color: white;
+    font-size: 14px;
+    font-family: 'Acumin Variable';
+    transition: 0.2s all ease;
+}
+
+header a:hover{
+    color: #7B7B79;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.left-footer{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -7px;
+}
+
+.left-footer img{
+    height: 29px;
+}
+
+.right-footer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Acumin Variable';
+    gap: 5px;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.right-footer>div:nth-child(1){
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.right-footer>div:nth-child(4){
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.right-footer>div:nth-child(2){
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.right-footer>a{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #EEEDE9;
+    color: black;
+    transition: 0.2s all ease;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Acumin Variable';
+    font-weight: 700;
+}
+
+.right-footer>a:hover{
+    background-color: #82270B;
+    color: #EEEDE9;
+}
+
+.address{
+    font-size: 19px!important;
+}
+
+#home{
+    height: 100vh;
+}
+
+.home-container{
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: calc(100% - 100px);
+}
+
+.abs-home{
+    position: absolute;
+    bottom: 25px;
+    left: 445px;
+    height: 445px;
+}
+
+.the-texts{
+    display: flex;
+    flex-direction: column;
+    gap: -5px;
+    z-index: 5;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 305px;
+}
+
+.the-texts>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.the-texts>div:nth-child(1)>*:nth-child(1){
+    margin-bottom: -10px;
+}
+
+.the-texts>div:nth-child(2){
+    margin-left: 305px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.lil-text{
+    font-family: 'Acumin Variable';
+    font-size: 14px;
+    margin: 0 3px;
+}
+
+.big-text{
+    font-family: 'Schnyder Condensed';
+    font-size: 40px;
+    margin: 0 3px;
+}
+
+#contact{
+    height: 100vh;
+    position: relative;
+    z-index: 5;
+}
+
+.contact-container{
+    display: flex;
+    height: calc(100% - 100px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+
+.contact-left>h2{
+    font-family: 'Schnyder Condensed';
+    color: #82270B;
+    font-size: 75px;
+    margin-bottom: 10px;
+    margin-left:60px;
+}
+
+.contact-box{
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    font-size: 19px;
+    font-family: 'Acumin Variable';
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact-box>*:nth-child(1){
+    color: #EEEDE9;
+    transition: 0.2s all ease;
+}
+
+.contact-box>*:nth-child(2){
+    color: #7B7B79;
+    transition: 0.2s all ease;
+}
+
+.contact-box>*:hover{
+    color: #EEEDE9;
+}
+
+.contact-left .contact-box{
+    margin-left: 90px;
+}
+
+.contact-right{
+    display: flex;
+    width: 50%;
+    align-items: flex-end;
+    height: 100%;
+    font-family: 'Acumin Variable';
+    font-size: 19px;
+}
+
+.contact-right .contact-box>*:nth-child(2){
+    color: #EEEDE9;
+    transition: 0.2s all ease;
+}
+
+.contact-right .contact-box>*:nth-child(1){
+    color: #7B7B79;
+    transition: 0.2s all ease;
+}
+
+.contact-right .contact-box>*:nth-child(1):hover{
+    color: #EEEDE9;
+}
+
+.contact-right>div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.contact-right>div>div{
+    display: flex;
+    gap: 150px;
+    justify-content: space-between;
+}
+
+.rel{
+    position: relative;
+}
+
+.rel span{
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 15px;
+}
+
+#services{
+    position: relative;
+    height: 100vh;
+}
+
+.services-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - 100px);
+}
+
+.services-left{
+    width: 55%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 200px;
+}
+
+.services-left>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 80px;
+}
+
+.services-left p{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Acumin Variable';
+    font-weight: 100;
+}
+
+.services-left>div:nth-child(2){
+    margin-left: 80px;
+}
+
+.services-left a{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #11100E;
+    background-color: #EEEDE9;
+    font-family: 'Acumin Variable';
+    font-weight: 700;
+    transition: 0.2s all ease;
+}
+
+.services-left a:hover{
+    background-color: #82270B;
+    color: #EEEDE9;
+}
+
+.services-right{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.services-right>div{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 25px;
+    flex-direction: column;
+    color: #EEEDE9;
+    font-family: 'Schnyder Condensed';
+    font-size: 45px;
+    text-align: center;
+    line-height: 41px;
+}
+
+/* Position all sections absolutely so they can slide */
+#big-home, #big-contact, #big-services {
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%); /* Start off-screen */
+    transition: transform 0.5s ease-in-out;
+    z-index: 1; /* Base z-index */
+    background-color: #101010;
+}
+
+/* Make the home section visible on load */
+#big-home {
+    transform: translateX(0);
+    z-index: 10;
+}
+
+/* Slide in active section */
+
+
+/* When a section is inactive, slide it out */
+.inactive-section {
+    transform: translateX(-100%)!important;
+}
+
+.active-section {
+    transform: translateX(0)!important;
+}
+
+@media only screen and (min-width: 1024px){
+    .mob{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+ 
+    .mobnot{
+        display: none;
+    }
+
+    footer{
+        top: 0;
+    }
+
+    .footer-container{
+        position: relative;
+        height: 100%;
+        margin: 0;
+    }
+
+    .left-footer{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .right-footer{
+        position: absolute;
+        right: 0;
+        bottom: 42%;
+        transform: translateY(0%);
+        gap: 0;
+    }
+
+    .abs-home{
+        bottom: 0px;
+        left: 0%;
+        right: 0%;
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .home-container{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .the-texts{
+        bottom: unset;
+        top: 20%;
+    }
+
+    .right-footer>div:nth-child(4){
+        order: -1;
+    }
+
+    .right-footer>div:nth-child(2){
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    header{
+        z-index: 6;
+    }
+
+    .options:not(.right-header){
+        width: 95%;
+        gap: 0;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .services-container{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .services-left{
+        width: 85%;
+        gap: 50px;
+    }
+
+    .services-right{
+        width: 85%;
+    }
+
+    #services{
+        z-index: 5;
+    }
+
+    .services-right>div{
+        width: 100%;
+        font-size: 37px;
+        line-height: 34px;
+        gap: 0;
+    }
+
+    .services-right>div>div:nth-child(2){
+        margin-left: auto;
+    }
+
+    .services-right>div>div:nth-child(4){
+        margin-left: auto;
+    }
+
+    .services-right>div>div:nth-child(1){
+        margin-right: auto;
+    }
+
+    .services-right>div>div:nth-child(3){
+        margin-right: auto;
+    }
+
+    .services-left>div:nth-child(1){
+        margin-left: 20px;
+    }
+
+    .services-left>div:nth-child(2){
+        margin-left: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .contact-container{
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .contact-left{
+        width: 100%;
+    }
+
+    .contact-right{
+        width: 100%;
+        justify-content: flex-end;
+        height: auto;
+    }
+
+    #big-contact .right-footer{
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .right-footer>.mob{
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    .contact-box, .contact-right{
+        font-size: 15px;
+    }
+
+    .rel span{
+        font-size: 10px;
+    }
+
+    .address{
+        font-size: 15px!important;
+    }
+
+    .contact-right>div>div{
+        gap: 100px;
+    }
+
+    .contact-left .contact-box{
+        margin-left: 50px;
+    }
+
+    .contact-left>h2{
+        margin-left: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .contact-left>h2{
+        font-size: 48px;
+        margin-left: 0;
+        width: 350px;
+    }
+
+    .contact-right>div>div{
+        gap: 20px;
+    }
+
+    .contact-box, .contact-right{
+        font-size: 12px;
+    }
+
+    .left-footer img{
+        height: 21px;
+    }
+
+    .contact-left .contact-box{
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .contact-right{
+        justify-content: center;
+    }
+
+    .address{
+        font-size: 12px!important;
+    }
+
+    .contact-left{
+        align-items: center;
+    }
+
+    #big-contact .right-footer{
+        bottom: 40px;
+    }
+
+    .big-text{
+        font-size: 28px;
+    }
+
+    .lil-text{
+        font-size: 11px;
+    }
+
+    .the-texts>div:nth-child(2){
+        margin-left: 150px;
+    }
+
+    .right-footer>a{
+        font-size: 10px;
+        width: 183px;
+        height: 26px;
+    }
+
+    .right-footer>div:nth-child(4){
+        font-size: 10px;
+    }
+
+    .right-footer>div:nth-child(2){
+        font-size: 9px;
+    }
+
+    header a{
+        font-size: 10px;
+    }
+
+    .services-left p{
+        font-size: 11px;
+    }
+
+    .services-left>div:nth-child(1){
+        gap: 15px;
+    }
+
+    .services-right>div{
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .services-left{
+        gap: 20px;
+    }
+
+    .services-left a{
+        font-size: 10px;
+        width: 183px;
+        height: 26px;
+    }
+
+    .services-right>div{
+        font-size: 30px;
+        line-height: 27px;
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+    .big-text{
+        font-size: 23px;
+    }
+
+    .the-texts>div:nth-child(2){
+        margin-left: 100px;
+    }
+
+    .services-right>div{
+        font-size: 23px;
+        line-height: 20px;
+    }
+
+    .services-left p{
+        font-size: 9px;
+    }
+
+    .services-left>div:nth-child(1){
+        gap: 7px;
+    }
+}
