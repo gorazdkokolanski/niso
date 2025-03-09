@@ -662,6 +662,7 @@ footer{
     }
 
     .contact-right{
+        align-items: flex-start;
         justify-content: center;
     }
 
@@ -757,5 +758,9 @@ footer{
 
     .services-left>div:nth-child(1){
         gap: 7px;
+    }
+
+    .contact-left>h2{
+        font-size: 40px;
     }
 }
