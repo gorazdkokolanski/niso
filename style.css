@@ -602,6 +602,10 @@ footer{
         margin-left: 30px;
     }
 
+    .services-right{
+        align-items: flex-start;
+    }
+
 }
 
 @media only screen and (max-width: 768px){
