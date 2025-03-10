@@ -1,34 +1,26 @@
 @font-face {
-    font-family: 'Acumin Pro';
+    font-family: 'Acumin Pro Medium';
+    src: url('fonts/Acumin-Pro-Wide-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Var';
     src: url('fonts/Acumin-RPro.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Acumin Pro';
-    src: url('fonts/Acumin-BdPro.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Acumin Pro';
-    src: url('fonts/Acumin-ItPro.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Acumin Pro';
-    src: url('fonts/Acumin-BdItPro.otf') format('opentype');
+    font-family: 'Acumin Light';
+    src: url('fonts/Acumin-Pro-Light.otf') format('opentype');
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
 }
 
-/* Example usage */
 body {
-    font-family: 'Acumin Pro', sans-serif;
+    font-family: 'Acumin Var', sans-serif;
 }
 
 
@@ -92,8 +84,9 @@ header>.container{
 header a{
     color: white;
     font-size: 14px;
-    font-family: 'Acumin Pro';
+    font-family: 'Acumin Light';
     transition: 0.2s all ease;
+    font-weight: 500;
 }
 
 header a:hover{
@@ -137,7 +130,7 @@ footer{
 .right-footer{
     display: flex;
     flex-direction: column;
-    font-family: 'Acumin Pro';
+    font-family: 'Acumin Pro Medium';
     gap: 5px;
     align-items: flex-end;
     text-align: right;
@@ -156,6 +149,7 @@ footer{
 .right-footer>div:nth-child(2){
     font-size: 12px;
     margin-top: 10px;
+    font-family: 'Acumin Pro Medium';
 }
 
 .right-footer>a{
@@ -168,7 +162,7 @@ footer{
     transition: 0.2s all ease;
     justify-content: center;
     font-size: 14px;
-    font-family: 'Acumin Pro';
+    font-family: 'Acumin Pro Medium';
     font-weight: 700;
 }
 
@@ -179,6 +173,7 @@ footer{
 
 .address{
     font-size: 19px!important;
+    font-family: 'Acumin Light';
 }
 
 #home{
@@ -229,7 +224,7 @@ footer{
 }
 
 .lil-text{
-    font-family: 'Acumin Pro';
+    font-family: 'Acumin Pro Medium';
     font-size: 14px;
     margin: 0 3px;
 }
@@ -268,6 +263,7 @@ footer{
     font-size: 75px;
     margin-bottom: 10px;
     margin-left:60px;
+    font-weight: 300;
 }
 
 .contact-box{
@@ -275,7 +271,7 @@ footer{
     gap: 0px;
     flex-direction: column;
     font-size: 19px;
-    font-family: 'Acumin Pro';
+    font-family: 'Acumin Light';
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -303,7 +299,7 @@ footer{
     width: 50%;
     align-items: flex-end;
     height: 100%;
-    font-family: 'Acumin Pro';
+    font-family: 'Acumin Light';
     font-size: 19px;
 }
 
@@ -343,6 +339,7 @@ footer{
     top: 0;
     transform: translateY(-100%);
     font-size: 15px;
+    font-family: 'Acumin Light';
 }
 
 #services{
@@ -377,7 +374,7 @@ footer{
 .services-left p{
     font-size: 14px;
     line-height: 20px;
-    font-family: 'Acumin Pro';
+    font-family: 'Acumin Light';
     font-weight: 100;
 }
 
@@ -394,7 +391,7 @@ footer{
     font-size: 14px;
     color: #11100E;
     background-color: #EEEDE9;
-    font-family: 'Acumin Pro';
+    font-family: 'Acumin Pro Medium';
     font-weight: 700;
     transition: 0.2s all ease;
 }
@@ -535,6 +532,7 @@ footer{
     .services-left{
         width: 85%;
         gap: 50px;
+        justify-content: flex-end;
     }
 
     .services-right{
@@ -710,6 +708,7 @@ footer{
 
     .services-left p{
         font-size: 11px;
+        line-height: 11px;
     }
 
     .services-left>div:nth-child(1){
