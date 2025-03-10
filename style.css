@@ -330,12 +330,17 @@ footer{
     flex-direction: column;
     gap: 30px;
     margin-bottom: 70px;
+    width: 100%;
 }
 
 .contact-right>div>div{
     display: flex;
-    gap: 150px;
+    gap: 0px!important;
     justify-content: space-between;
+}
+
+.contact-right>div>div>div{
+    width: 50%;
 }
 
 .rel{
@@ -638,6 +643,10 @@ footer{
 
     .address{
         font-size: 15px!important;
+    }
+
+    .contact-right>div{
+        width: 50%;
     }
 
     .contact-right>div>div{
