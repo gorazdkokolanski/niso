@@ -179,7 +179,7 @@ footer{
 
 .address{
     font-size: 19px!important;
-    font-family: 'Acumin Light';
+    font-family: 'Acumin Pro Medium';
     width: 100%;
     text-align: left;
 }
@@ -493,7 +493,7 @@ footer{
 
     .right-footer{
         position: absolute;
-        right: 0;
+        right: 20px;
         bottom: 42%;
         transform: translateY(0%);
         gap: 0;
