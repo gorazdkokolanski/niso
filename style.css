@@ -532,7 +532,7 @@ footer{
     .services-left{
         width: 85%;
         gap: 50px;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .services-right{
