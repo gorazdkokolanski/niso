@@ -84,7 +84,7 @@ header>.container{
 header a{
     color: white;
     font-size: 14px;
-    font-family: 'Acumin Light';
+    font-family: 'Acumin Pro Medium';
     transition: 0.2s all ease;
     font-weight: 500;
 }
@@ -171,9 +171,17 @@ footer{
     color: #EEEDE9;
 }
 
+.right-footer:has(.address){
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .address{
     font-size: 19px!important;
     font-family: 'Acumin Light';
+    width: 100%;
+    text-align: left;
 }
 
 #home{
@@ -271,7 +279,7 @@ footer{
     gap: 0px;
     flex-direction: column;
     font-size: 19px;
-    font-family: 'Acumin Light';
+    font-family: 'Acumin Pro Medium';
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -299,7 +307,7 @@ footer{
     width: 50%;
     align-items: flex-end;
     height: 100%;
-    font-family: 'Acumin Light';
+    font-family: 'Acumin Pro Medium';
     font-size: 19px;
 }
 
@@ -442,8 +450,16 @@ footer{
     transform: translateX(-100%)!important;
 }
 
+#big-home.inactive-section{
+    transform: translateX(100%)!important;
+}
+
 .active-section {
     transform: translateX(0)!important;
+}
+
+#big-home.active-section{
+    transform: translateX(00%)!important;
 }
 
 @media only screen and (min-width: 1024px){
@@ -465,6 +481,7 @@ footer{
     .footer-container{
         position: relative;
         height: 100%;
+        width: 100%;
         margin: 0;
     }
 
@@ -530,8 +547,13 @@ footer{
 
     .services-left{
         width: 85%;
-        gap: 50px;
+        gap: 20px;
         justify-content: center;
+    }
+
+    .services-left p{
+        font-size: 12px;
+        line-height: 16px;
     }
 
     .services-right{
@@ -544,8 +566,8 @@ footer{
 
     .services-right>div{
         width: 100%;
-        font-size: 37px;
-        line-height: 34px;
+        font-size: 34px;
+        line-height: 31px;
         gap: 0;
     }
 
@@ -567,6 +589,7 @@ footer{
 
     .services-left>div:nth-child(1){
         margin-left: 20px;
+        gap: 10px;
     }
 
     .services-left>div:nth-child(2){
@@ -632,13 +655,28 @@ footer{
         align-items: flex-start;
     }
 
+    
+    @media only screen and (min-width: 768px){
+        .right-footer:has(.address){
+            width: 427px;
+            right: 5%;
+        }
+    }
+
 }
 
+
 @media only screen and (max-width: 768px){
+    .right-footer:has(.address){
+        width: auto;
+        right:20px;
+    }
+
     .contact-left>h2{
         font-size: 48px;
         margin-left: 0;
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
     }
 
     .contact-right>div>div{
@@ -708,6 +746,7 @@ footer{
     .services-left p{
         font-size: 11px;
         line-height: 13px;
+        margin-top: 20px;
     }
 
     .services-left>div:nth-child(1){
