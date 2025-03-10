@@ -612,6 +612,7 @@ footer{
     .contact-right{
         width: 100%;
         justify-content: flex-end;
+        align-items: center;
         height: auto;
         height: 40%;
     }
