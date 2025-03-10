@@ -645,8 +645,12 @@ footer{
         font-size: 15px!important;
     }
 
+    .contact-right{
+        justify-content: flex-end;
+    }
+
     .contact-right>div{
-        width: 50%;
+        width: 427px;
     }
 
     .contact-right>div>div{
@@ -687,6 +691,10 @@ footer{
         margin-left: 0;
         max-width: 350px;
         width: 100%;
+    }
+
+    .contact-right>div{
+        width: 281px;
     }
 
     .contact-right>div>div{
